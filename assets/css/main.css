@@ -2276,6 +2276,88 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+/* Card*/
 
+#card details summary{
+  list-style-type:none;  
+}
+#card .collapse{   
+   border: solid 1px grey;
+   border-radius: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0.25);
+   transition:background-color .25s;
+   will-change: background-color;
+}
+#card .collapse:not(:last-child){
+  margin-bottom: 10px;
+}
+#card .collapse:first-child{
+  margin-top: 10px;
+}
+#card .title{
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  background-color: #384255;
+}
+#card .collapse .title::after{
+  content: '😴';
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;  
+}
+#card .collapse .title:hover{
+  background-color: #515b6d;
+}
+#card .collapse .title:hover:after{
+  content: '😃';
+}
+#card .collapse[open] .title:after{
+  content: '😍';  
+}
 
-  
+#card .description {
+  border-top: rosybrown solid 1px;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 20px;
+}
+#card span.complement{
+  margin-left: 5px;  
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 2px 4px;
+  background-color: lightseagreen;
+  color: #ffffff;
+}
+
+#card .description .box_question{
+  border: solid 1px grey;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#card .description .box_question .quest{
+  font-weight: 700;
+  color: #384255;
+  margin: 0;  
+}
+#card .description .box_question .answer{
+  border: solid 1px gray;
+  border-radius: 4px;
+  padding: 7px;
+  background-color: rgb(226, 226, 226);
+  color: black; 
+}
+#card .description .box_question .reason {
+  margin: 0;
+  padding: 5px;
+}
+#card .description img{
+  align-content: center;
+}
