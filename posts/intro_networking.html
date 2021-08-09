@@ -6,7 +6,7 @@
 -->
 <html lang="pt">
 	<head>
-		<title>POST</title>
+		<title>Introdução Redes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+									<a href="index" class="logo"><strong>InfoSec</strong> by sam!co</a>
 									<ul class="icons">										
 										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
@@ -34,7 +34,7 @@
 									<header class="main">
 										<h1>Introdução Redes</h1>
 									</header>
-									<span class="image main"><img src="../images/net.jpg" alt="" /></span>
+									<span class="image main"><img class="image-bigger" src="../images/net.jpg" alt="" /></span>                                    
                                     <!-- card -->
                                         <section id="card">
                                             <details class="collapse">
@@ -46,7 +46,7 @@
                                             <details class="collapse">
                                                 <summary class="title">Tarefa 2 <span class="complement">The OSI Model</span></summary>
                                                 <div class="description">
-                                                    <h3>Perguntas y respostas</h3>
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
                                                     <div class="box_question">
                                                         <div class="quest">
                                                             <p>Qual camada Você escolheria para enviar dados: TCP ou UDP?</p>
@@ -143,10 +143,13 @@
                                             </details>
                                             <details class="collapse">
                                                 <summary class="title">Tarefa 3 <span class="complement">Encapsulation</span></summary>
-                                                <div class="description">                                                    
-                                                    <img width="75%" src="../images/encapsulation.jpg" alt="OSI model">
-                                                                                                        
+                                                <div class="description">  
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>                                                     
                                                     <div class="box_question">
+                                                        <div class="reason"><img width="75%" src="../images/encapsulation.jpg" alt="OSI model"></div>                                                        
+                                                    </div>                                                  
+                                                    <div class="box_question">
+                                                        <div class="reason"></div>
                                                         <div class="quest">
                                                             <p>Como tem que referir à camada 2 do processo de encapsulamento (com o modelo OSI)?</p>
                                                         </div>
@@ -190,54 +193,311 @@
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 4 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 4 <span class="complement">O Modelo TCP/IP</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual modelo foi Introducido primeiro, OSI ou TCP/IP?</p>
+                                                        </div>
+                                                        <div class="answer">TCP/IP</div>
+                                                        <div class="reason"><p>O modelo <strong> TCP/IP</strong><br>É similar ao modelo OSI, e tem alguns anos na frente, e serve como base para as redes na realidade de hoje.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP cobre a funcionalidade da camada de Transporte do modelo OSI? (nome completo)</p>
+                                                        </div>
+                                                        <div class="answer">Transport</div>
+                                                        <div class="reason"><p>O modelos <strong> TCP/IP e OSI</strong><br>são diferenetes, sendo que OSI tem 7 camadas e TCP/IP tem 4 camadas.</p></div>
+                                                    </div>                                                    
+                                                                                                        
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP cobre a funcionalidade da camada de 'Sessão' do modelo OSI? (nome completo)</p>
+                                                        </div>
+                                                        <div class="answer">Application</div>
+                                                        <div class="reason"><p>No modelo <strong> TCP/IP</strong><br>A camada de "Aplicação" (application), representa o equivalente de 3 camadas no modelo OSI (Aplication,Presentation, Session).</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>A camada de Interface de Rede do modelo TCP/IP cobre a funcionalidade de duas camadas no modelo OSI, esta é Data link e ...?</p>
+                                                        </div>
+                                                        <div class="answer">Physical</div>
+                                                        <div class="reason"><p>A camada <strong> Física (Physical)</strong><br> é a primeira camada, que está logo no hardware do computador.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP trabalha com a funcionalidade da camada de "Rede" do OSI?</p>
+                                                        </div>
+                                                        <div class="answer">Internet</div>
+                                                        <div class="reason"><p>A Camada <strong> Internet</strong><br>do modelo TCP/IP é a responsável por encontrar o destino do seu pedido <br>(ex. facebook.com, google.com,etc)  .</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que tipo de protocolo é TCP?</p>
+                                                        </div>
+                                                        <div class="answer">Connection-based</div>
+                                                        <div class="reason"><p>Connection-based ou <strong> baseada-na-conexão</strong><br>significa que antes que você envie dados usando  TCP, o protocolo primeiro estabelece uma conexão entre os computadores (ex. seu computador e o servidor do google) para depois enviar os dados, mas este protocolo faz 3 tipos de conexão antes, para se garantir que está conectado mesmo.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>O  que significa SYN?</p>
+                                                        </div>
+                                                        <div class="answer">Synchronise</div>
+                                                        <div class="reason"><p>Synchronise ou  <strong>sincronização</strong><br>É a primeira etapa da verificação de conexão entre os computadores.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é a SEGUNDA etapa das 3 etapas (3handshake)?</p>
+                                                        </div>
+                                                        <div class="answer">SYN/ACK</div>
+                                                        <div class="reason"><p>Para ter certeza da conexão<strong> o Servidor(o segundo computador)</strong><br>responde com o mesmo pacote de dados que foi enviado na primeira etapa adicionando um outro pacote (ACK) para após receber de volta e ter certeza que agora é possível se conectar..</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual a abreviação para o segmento "Acknowledgement" na terceira etapa de conexão? (3-way-handshake) </p>
+                                                        </div>
+                                                        <div class="answer">ACK</div>
+                                                        <div class="reason"><p>Esta <strong> Terceira etapa</strong><br>O servidor recebe do cliente o pacote enviado na segunda etapa e agora sim garantir a conexão e envio de dados. (por isso quando vai procurar um site, ele demora um pouquinho para se conectar, e mostra uma imagem ou um icone "carregando")</p></div>
+                                                    </div>
+
+                                                </div>
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 5 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 5 <span class="complement">Networking tools: Ping</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual comando é usado para fazer um ping ao site bbc.co.uk?</p>
+                                                        </div>
+                                                        <div class="answer">ping bbc.co.uk</div>
+                                                        <div class="reason"><p>Para fazer um <strong> PING</strong><br>que é nada mais que verificar se está conectado ou não, o comando é "ping [alvo]"</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Faça um ping no "muirlandoracle.co.uk" Qual é endereço IPV4?</p>
+                                                        </div>
+                                                        <div class="answer">217.160.0.152</div>
+                                                        <div class="reason"><img width="100%" src="../images/ping_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" (mudança) permite mudar o intervalo de enviar um pedido de ping?</p>
+                                                        </div>
+                                                        <div class="answer">-i</div>
+                                                        <div class="reason"><img width="100%" src="../images/i_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" (mudança) permite restringir a requisição para IPV4?</p>
+                                                        </div>
+                                                        <div class="answer">-4</div>
+                                                        <div class="reason"><img width="60%" src="../images/b_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" permite ter mais informação (verbose)? </p>
+                                                        </div>
+                                                        <div class="answer">-v</div>
+                                                        <div class="reason"><p><strong> Verbose</strong><br>Esta presente em quanse todas as ferramentas, serve para visualizar o que acontece no segundo plano.</p></div>
+                                                    </div>
+                                                </div>
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 6 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 6 <span class="complement">Networking tools: Traceroute</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
+                                                    <p>Traceroute faz um seguimento, desde seu dispositivo até o servidor (ex:google.com), e mostra todos os "caminhos" ex: o endereço do seu dispositivo, endereço do seu proveedor de internet,endereço do servidor do estado, até chegar no servidor do Google. </p>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Use traceroute em tryhackme.com</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa de resposta</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch"(mudança) pode-se usar para especificar uma interface enquando usa Traceroute?</p>
+                                                        </div>
+                                                        <div class="answer">-i</div>
+                                                        <div class="reason"><p><strong>traceroute --help (no terminal)</strong><br><img width="95%" src="../images/c_int_net.png" alt=""></p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" é usado para TCP SYN request quando se faz seguimento da rota?</p>
+                                                        </div>
+                                                        <div class="answer">-T</div>
+                                                        <div class="reason"><img width="98%" src="../images/d_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP fará mapeamento por padrão (Window)?</p>
+                                                        </div>
+                                                        <div class="answer">Internet</div>
+                                                        <div class="reason"><p>Que é equivalente ao modelo <strong> OSI</strong><br>A camada da Rede.</p></div>
+                                                    </div>
+
+                                                </div>
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 7 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 7 <span class="complement">Networking tools: WHOIS</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Realize uma busca 'whois' no facebook.com</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa resposta</div>
+                                                        <div class="reason"><img width="100%" src="../images/whois_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é codigo do registro postal do Facebook.com?</p>
+                                                        </div>
+                                                        <div class="answer">94025</div>
+                                                        <div class="reason"><img width="80%" src="../images/cep_int_net.png" alt=""></div>
+                                                    </div>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Quando foi o dominio Facebook.com registrado?</p>
+                                                        </div>
+                                                        <div class="answer">29/03/1997</div>
+                                                        <div class="reason"><img width="78%" src="../images/reg_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Realize um whois em microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa resposta</div>
+                                                        <div class="reason"><img width="88%" src="../images/mic_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual a cidade em que se registrou?</p>
+                                                        </div>
+                                                        <div class="answer">Redmond</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o nome do corso do golf perto do endereço de registro para microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">Bellevue Golf Course</div>
+                                                        <div class="reason"><img width="80%" src="../images/mic_reg_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o E-mail Tech (técnico) da microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">msnhst@microsoft.com</div>                                                        
+                                                    </div>
+                                                </div>
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 8 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 8 <span class="complement">Networking tools: Dig</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas y respostas</h3>
+                                                    <p>Quando você quere acessar um site, a primeira coisa que o seu computador faz, é checar a memória caché para ver se já está salvo o endereço, se não estiver no caché, seu computador envia um pedido a um servidor Recursivo "recursive DNS", é tipo vai no servidor do seu provedor de internet (ISP) e verifica o caché, se não estiver, o pedido vai para um servidor Root,antes do 2004 tinha-se 13 servidores Root, hoje tem muito mais. Dos servidores Root volta para os servidores TLD (.br/.bo/.uk) do respetivo país, após isso vai para os servidores Autoritativos, onde se encontra o registro da pagina que você procura e ele permite a conexão com o servidor do site, tudo isso em questão de mili-segundos.</p>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que significa DNS?</p>
+                                                        </div>
+                                                        <div class="answer">Domain Name System</div>
+                                                        <div class="reason"><a class="sites-link" href="https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio" target="_blanc">Wikipedia</a></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o primeiro tipo de servidor DNS que o seu computador consulta quando você procura por um dominio?</p>
+                                                        </div>
+                                                        <div class="answer">Recursive</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que tipo de servidor DNS contém o registro de um dominio especifico (ex: .com/ .com.br)?</p>
+                                                        </div>
+                                                        <div class="answer">Top-Level Domain</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Onde o primeiro lugar a ser verficado na procura do endereço do dominio?</p>
+                                                        </div>
+                                                        <div class="answer">Local Cache</div>
+                                                        <div class="reason"><p>No seu proprio computador ou dispositivo</p></div>
+                                                    </div>
+
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>O google funciona em 2 servidores DNS. Um deles tem IP 8.8.8.8 qual é o endereço do outro?</p>
+                                                        </div>
+                                                        <div class="answer">8.8.4.4</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Se uma consulta DNS tem um TTL de 24 horas,  qual o número que a consulta DIG mostrará?</p>
+                                                        </div>
+                                                        <div class="answer">86400</div>
+                                                        <div class="reason"><p><strong> TTL (Time To Live)</strong><br>Quando seu computador faz uma consulta por o nome de um dominio, este salva o resultado no caché, e mostra por quantos segundos tem validez, então 24 horas tem 86400 segundos. (60*60*24)</p></div>
+                                                    </div>                                                    
+                                                </div>
                                             </details>
 
                                             <details class="collapse">
-                                                <summary class="title">Tarefa 9 <span class="complement">titulo</span></summary>
-                                                <div class="description">asdfla ioasdfjlk</div>
+                                                <summary class="title">Tarefa 9 </summary>
+                                                <div class="description">
+                                                    <div class="answer">Não precisa resposta</div>                                                        
+                                                    
+                                                </div>
                                             </details>
                                             
                                         </section> 
+                        </div>
+                </div>
+                                       
 				<!-- Sidebar -->
                 <div id="sidebar">
                     <div class="inner">
 
-                        <!-- Search -->
+                            <!-- Search -->
                             <section id="search" class="alt">
                                 <form method="post" action="#">
                                     <input type="text" name="query" id="query" placeholder="Search" />
                                 </form>
                             </section>
 
-                        <!-- Menu -->
+                            <!-- Menu -->
                             <nav id="menu">
                                 <header class="major">
-                                    <h2>THM Write-Ups</h2>
+                                    <h2 class="title-side-darker">THM Write-Ups</h2>
                                 </header>
                                 <ul>
-                                    <li><a href="../index.html" class="icon solid fa-angle-double-left">  Atrás</a></li>									
+                                    <li><a href="../index.html" class="icon solid fa-angle-double-left">  Inicio</a></li>									
                                     <li><a href="#">Fácil</a></li>
                                     <li><a href="#">Médio</a></li>
                                     <li><a href="#">Difícil</a></li>
@@ -245,10 +505,10 @@
                                 </ul>
                             </nav>
 
-                        <!-- Section -->
+                            <!-- Section -->
                             <section>
                                 <header class="major">
-                                    <h2>Ante interdum</h2>
+                                    <h2 class="title-side-darker">Recentes</h2>
                                 </header>
                                 <div class="mini-posts">
                                     <article>
@@ -269,10 +529,10 @@
                                 </ul>
                             </section>
 
-                        <!-- Section -->
+                            <!-- Section -->
                             <section>
                                 <header class="major">
-                                    <h2>Contato</h2>
+                                    <h2 class="title-side-darker">Contato</h2>
                                 </header>
                                 <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                 <ul class="contact">
@@ -283,15 +543,13 @@
                                 </ul>
                             </section>
 
-                        <!-- Footer -->
-                            <footer id="footer">
-                                <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-                            </footer>
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>
 
+                        </div>
                     </div>
-                </div>
-					</div>
-
 			</div>
 
 		<!-- Scripts -->
