@@ -78,7 +78,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #222629; }
+  background: #222629; }  
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -175,7 +175,6 @@ h6 {
     line-height: 1.4; }
   h2 {
     font-size: 1.5em; } }
-
 sub {
   font-size: 0.8em;
   position: relative;
@@ -2110,7 +2109,8 @@ h2.title-side-darker{
         right: -0.5em;
         top: 0; }
       #header h2.major{
-        font-size: 1.130em;
+        font-size: 1em;
+        text-align: right;
       } }
       
 /* Banner */
@@ -2191,6 +2191,22 @@ h2.title-side-darker{
     #banner .image {
       max-height: 35vh; }
      }
+  @media screen and (max-width: 390px) {
+    h1.top{
+      font-size: 1.678em ;
+      padding-bottom: 0.7em;
+    }
+    p.justificado{
+      word-wrap: none;
+      word-spacing: 0.195px;
+      text-align: justify;
+      text-indent: 2rem;
+      text-justify:distribute;
+      text-align-last:auto;
+      
+    }
+    
+  }
     
 /* Footer */
 #footer .copyright {
