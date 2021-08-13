@@ -2417,11 +2417,15 @@ h2.title-side-darker{
   #card img{
     width: 100%;
   }
+  #card .answer{
+    font-size: 0.85em;
+  }
 }
 @media screen and (min-width:570px){
   #card img{
     width: 80%;
   }
+  
 }
 @media screen and (min-width: 950px){
   #card img{
