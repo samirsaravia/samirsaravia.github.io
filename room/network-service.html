@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt">
+	<head>
+		<title>Serviço de Rede</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index" class="logo"><strong>InfoSeg</strong> by sam!co</a>
+									<ul class="icons">										
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Serviços de Rede</h1>
+									</header>
+
+									<span class="image main"><img src="../images/SR-bg.png" alt="" /></span>
+                                    
+                                    <!--Card-->
+                                    <section id="card">
+                                        <details class="collapse">
+                                            <summary class="title">Task 1<span class="complement">Conecte-se</span></summary>
+                                            <div class="description">
+                                                <p>Não precisa de resposta</p>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 2<span class="complement">Intro SMB</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O que significa SMB?</p>
+                                                    </div>
+                                                    <div class="answer">server message block</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Que tipo de protocolo é SMB?</p>
+                                                    </div>
+                                                    <div class="answer">response-request</div>
+                                                    <div class="reason"><p>Response-request ou <strong>requisição-resposta</strong><br>Usado para compartilhar acesso a pastas, impressoras, portas serial e outros recursos dentro de uma rede.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Usando o que os clientes se conectam ao servidor?</p>
+                                                    </div>
+                                                    <div class="answer">TCP/IP</div>
+                                                    <div class="reason"><p>Segundo o  <strong><a href="https://datatracker.ietf.org/doc/html/rfc1001">RFC1001</a>/<a href="https://datatracker.ietf.org/doc/html/rfc1002">RFC1002</a> </strong></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Em que sistema funciona "Samba"?</p>
+                                                    </div>
+                                                    <div class="answer">Unix</div>
+                                                    <div class="reason"><p>Samba <strong> código fonte aberto</strong><br>Da suporte ao protocolo SMB.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 3<span class="complement">Enumerando SMB</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <p>Enumerar é o processo de arrecadar informação de um alvo para um potencial ataque ou uma exploração.</p>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Faça um scan (varredura) nmap da sua escolha, Quantas portas estão abertas?</p>
+                                                    </div>
+                                                    <div class="answer">3</div>
+                                                    <div class="reason"><img src="../images/SR-ports.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Em que porta está funcionando SMB?</p>
+                                                    </div>
+                                                    <div class="answer">139/445</div>
+                                                    <div class="reason"><img src="../images/SR-139.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Começando com Enum4Linux, faça uma enumeração básica. Para começar, qual é o nome do workgroup?</p>
+                                                    </div>
+                                                    <div class="answer">WORKGROUP</div>
+                                                    <div class="reason"><img src="../images/SR-groupname.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual parece ser o nome da máquina?</p>
+                                                    </div>
+                                                    <div class="answer">POLOSMB</div>
+                                                    <div class="reason"><img src="../images/SR-os-info.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual a versão do sistema operativo que está instalado?</p>
+                                                    </div>
+                                                    <div class="answer">6.1</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O que "shares" apresenta como algo que podería ser investigado?</p>
+                                                    </div>
+                                                    <div class="answer">profiles</div>
+                                                    <div class="reason"><img src="../images/SR-prof.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 4<span class="complement">Explorando SMB</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual sería a sintaxe correta para acessar um compartilhamento SMB com o nome "secret" como usuario "suit" na maquina com IP 10.10.10.2?</p>
+                                                    </div>
+                                                    <div class="answer"><code>smbclient //10.10.10.2/secret -U suit -p 445</code></div>
+                                                    <div class="reason"><p><strong>A Sintaxe é:</strong><br>smbclient //[IP]/[share] -U[usuario] -p [porta]</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Agora vejamos se o nosso compartilhamento tem sido configurado como acesso anónimo. Pode ser acessado? Y/N?</p>
+                                                    </div>
+                                                    <div class="answer">Y</div>
+                                                    <div class="reason"><img src="../images/SR-anony.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Dando uma olhada no acesso, a quem parece pertencer esta pasta de compartilhamento?</p>
+                                                    </div>
+                                                    <div class="answer potter">John Cactus</div>
+                                                    <div class="reason"><p>O nome está aí 👆,achou?<br>Há um documento dirigido aos funcionarios, mudando a rotina de trabalho devido a pandemia.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Que serviço tem sido configurado para que essa pessoa trabalhe desde casa (home-office)?</p>
+                                                    </div>
+                                                    <div class="answer">ssh</div>
+                                                    <div class="reason"><p>O arquivo <strong> .profile</strong><br>É um script, e tem um comentario "# for ssh logins, install and configure the libpam-umask package".</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Agora que se sabe disso, que directorio tem que procurar?</p>
+                                                    </div>
+                                                    <div class="answer">.ssh</div>
+                                                    <div class="reason"><p>É um diretorio ssh<strong> oculto por padrão</strong></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Este diretorio tem varias chaves de autenticação que da acesso ao servidor. Qual dessas chaves é a mais valiosa?</p>
+                                                    </div>
+                                                    <div class="answer">id_rsa</div>
+                                                    <div class="reason"><p>Quando se gera essas chaves para ssh, gera-se uma pública e <strong> uma privada.</strong><br>A pública tem a extensão .pub</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Baixe esse arquivo na sua máquina, troque as permissões para o mode restrito e use para tentar acessar ao servidor. Qual é a "flag" de smb.txt?</p>
+                                                    </div>
+                                                    <div class="answer potter">THM{smb_is_fun_eh?}</div>
+                                                    <div class="reason"><p>Depois de trocar as permissões da chave, entrar via ssh com um suposto usuario, usando a chave privada dentro de um arquivo para o ssh ler.</p></div>
+                                                
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 5<span class="complement">Telnet</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O que é Telnet?</p>
+                                                    </div>
+                                                    <div class="answer">application protocol</div>
+                                                    <div class="reason"><p>Application protocol ou <strong>protocolo de aplicação</strong><br>Que permite conectar e executar comandos num computador remoto que é o servidor de hospedagem de Telnet.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O que tem substituído Telnet devagar?</p>
+                                                    </div>
+                                                    <div class="answer">ssh</div>
+                                                    <div class="reason"><p>Telnet envia mensagens em texto claro e não tem mecanismos de segurança.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como se conectar a um servidor Telnet com o IP 10.10.10.3 na porta 23?</p>
+                                                    </div>
+                                                    <div class="answer"><code>telnet 10.10.10.3 23</code></div>
+                                                    <div class="reason"><p></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Na falta de quê, dizendo que toda comunicação com Telnet é em texto simples?</p>
+                                                    </div>
+                                                    <div class="answer">encryption</div>
+                                                    <div class="reason"><p>Justamente porque se a comunicação não é encriptada, significa que a comunicação que for interceptada por terceiros será fácil de ler. Com encriptação, dificulta outros poderem ler.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 6<span class="complement">Enumerando Telnet</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                    <p>Quantas portas estão abertas?</p>
+                                                    </div>
+                                                    <div class="answer">1</div>
+                                                    <div class="reason"><p>A commando para atingir a encontrar essa porta é<br><code>nmap -p- -Pn [host]</code></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual porta é?</p>
+                                                    </div>
+                                                    <div class="answer">8012</div>
+                                                    <div class="reason"><p>O processo é um pouco demorado já que são todas as portas pra fazer um scan<br>se não se importa com o barulho que gera na internet, mas fazer com mais pressa <code>nmap -T5 -p- [host]</code></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Esta porta não tem rotulo, mas pode listar o protocolo que está usando, qual é o protocolo?</p>
+                                                    </div>
+                                                    <div class="answer">TCP</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Agora faça um nmap de novo, sem o switch '-p-', quantas portas aparecem como abertas?</p>
+                                                    </div>
+                                                    <div class="answer">0</div>                                                    
+                                                </div>
+                                                <div class="box_question">     
+                                                    <div class="reason"><p>Não foi encontrada nenhuma porta aberta, porque a busca padrão, é só nas primeiras mil portas.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Baseado no título que foi visto, Para que esta porta poderia ser usada?</p>
+                                                    </div>
+                                                    <div class="answer">a backdoor</div>
+                                                    <div class="reason"><p>a backdoor tipo <strong> 'porta dos fundos'</strong><br>Mas tecnicamente é um servidor remoto.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>A quem poderia pertencer? Anotando todos os possíveis nomes de usuarios é importante na  fase de enumeração.</p>
+                                                    </div>
+                                                    <div class="answer">Skidy</div>
+                                                    <div class="reason"><p>É um possível </p> <strong>usuario</strong><br>Já que aparece um script, com o nome 'Skidy's backdoor'. Mas isso não diz nada ao respeito é só uma suposição.</p></div>
+                                                </div>                                                
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 7<span class="complement">Explorando Telnet</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Bora! Tente se conectar a esta porta Telnet.</p>
+                                                    </div>
+                                                    <div class="answer">Não precisa de resposta</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>É uma porta Telnet? Qual mensagem recebeu?</p>
+                                                    </div>
+                                                    <div class="answer">SKIDY'S BACKDOOR</div>
+                                                    <div class="reason"><img src="../images/SR-telnet-ex.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Bora tentar executar alguns commandos, respondeu a algum commando na sessão telnet? Y/N?</p>
+                                                    </div>
+                                                    <div class="answer">N</div>
+                                                    <div class="reason"><p>Na verdade só fica na mesma tela e não aparece nada.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Tem algo errado...verifique se o que você está escrevendo esta sendo executado como um comando do sistema.</p>
+                                                    </div>
+                                                    <div class="answer">Não precisa de resposta</div>
+                                                    <div class="reason"><p>Mas para verificar, precisa fazer a sua maquina ouvir ou torna-a em uma maquina local TCPDUMP. <br>
+                                                    <code>sudo tcpdump ip proto \\icmp -i [sua rede ou IP]</code></p></div>
+                                                </div>                                                
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Agora use o comando 'ping [sua maquina] -c 1' atraves da sessão telnet para verificar se o comando está sendo executado como um comando de sistema. Você recebeu algum ping de volta na sua maquina? Y/N?</p>
+                                                    </div>
+                                                    <div class="answer">Y</div>
+                                                    <div class="reason"><p>Para fazer funcionar o commando precisa por diante do comando '.RUN'</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    
+                                                    <div class="reason"><p>Isso significa que pode-se executar comandos do sistema. Agora precisa gerar um shell payload para fazer um netcat reverso.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Que palavra foi gerada no começo do payload?</p>
+                                                    </div>
+                                                    <div class="answer">mkfifo</div>
+                                                    <div class="reason"><p>Gera um payload aleatório que usado como comando para fazer um reverse shell neste caso.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como sería o comando para abrir uma porta na sua maquina?</p>
+                                                    </div>
+                                                    <div class="answer">nc -lvp 4444</div>
+                                                    <div class="reason"><p>Na verdade é <strong> nc -lvp [porta]</strong><br>Essa porta '4444' foi usada no payload.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="reason"><p>Agora só abrir a porta executar o comando no servidor alvo. E esperar a que se conecte o servidor como a sua maquina.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Sucesso! qual é o conteudo no arquivo 'flag.txt'?</p>
+                                                    </div>
+                                                    <div class="answer potter">THM{y0u_g0t_th3_t3ln3t_fl4g}</div>
+                                                    <div class="reason"><p>👆</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 8<span class="complement">FTP</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Que modelo de comunicação usa FTP?</p>
+                                                    </div>
+                                                    <div class="answer">client-server</div>
+                                                    <div class="reason"><p>FTP (protocolo de transferência de arquivo), como o nome sugere, permite a transferência de arquivos na rede.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual é a porta padrão para FTP?</p>
+                                                    </div>
+                                                    <div class="answer">21</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Quantos modos de conexão FTP existem?</p>
+                                                    </div>
+                                                    <div class="answer">2</div>
+                                                    <div class="reason"><p><strong>Ativo/ Passivo</strong><br>Ativo quando o cliente abre a porta e o servidor FTP se conecta, e Passivo quando o servidor abre uma porta para que o cliente se conecte.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 9<span class="complement">Enumerando FTP</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Faça um Scan na maquina alvo. Quantas portas estão abertas?</p>
+                                                    </div>
+                                                    <div class="answer">2</div>
+                                                    <div class="reason"><img src="../images/SR-ftp.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual porta está funcionando o FTP?</p>
+                                                    </div>
+                                                    <div class="answer">21</div>
+                                                    <div class="reason"><p>resposta na imagem de cima.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Que variante do FTP está funcionando nesta porta?</p>
+                                                    </div>
+                                                    <div class="answer">vsftpd</div>                                                    
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Tente acessar ao servidor FTP anonimamente, Qual é o nome do arquivo no diretorio 'anonymous' FTP?</p>
+                                                    </div>
+                                                    <div class="answer potter">PUBLIC_NOTICE.txt</div>
+                                                    <div class="reason"><p>👆</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual podería ser um possível usuário?</p>
+                                                    </div>
+                                                    <div class="answer potter">mike</div>
+                                                    <div class="reason"><p>👆 O arquivo encontrado, tem uma mensagem do sistema de administradores, e tem um nome, como possível usuario.</p></div>
+                                                </div>
+                                                <div class="box_question">  
+                                                    <div class="reason"><p>Dahora, agora que tem mais detalhes do servidor FTP e de um possível usuario, vamos ver o que pode ser feito com isso....</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 10<span class="complement">Explorando FTP</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual é a senha do usuário encontrado?</p>
+                                                    </div>
+                                                    <div class="answer potter">password</div>
+                                                    <div class="reason"><p>👆 <strong> Tendo um possível usuario, foi usado uma ferramenta para quebrar senhas "HYDRA"</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>BINGO!</p>
+                                                    </div>                                                    
+                                                    <div class="reason"><p>Agora que foi encontrado a senha, use para acessar o servidor FTP usando os credenciáis que tem.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O que tem dentro do arquivo 'ftp.txt'?</p>
+                                                    </div>
+                                                    <div class="answer potter">THM{y0u_g0t_th3_ftp_fl4g}</div>
+                                                    <div class="reason"><p class="aparecium">👆 🧙‍♂️"Aparecium"</p></div>
+                                                </div>
+                                            </div>
+                                        </details>                                        
+                                        
+                                    </section>
+                                    
+
+									
+
+								</section>
+
+						</div>
+					</div>
+
+                    <!-- Sidebar -->
+                    <div id="sidebar">
+                        <div class="inner">
+
+                            <!-- Search -->
+                                <section id="search" class="alt">
+                                    <form method="post" action="#">
+                                        <input type="text" name="query" id="query" placeholder="Search" />
+                                    </form>
+                                </section>
+
+                            <!-- Menu -->
+                                <nav id="menu">
+                                    <header class="major">
+                                        <h2 class="title-side-darker">THM Write-Ups</h2>
+                                    </header>
+                                    <ul>
+                                        <li><a href="../index" class="icon solid fa-angle-double-left"> Inicio</a></li>									
+                                        <li><a href="#">Fácil</a></li>
+                                        <li><a href="#">Médio</a></li>
+                                        <li><a href="#">Difícil</a></li>
+                                        <li><a href="#">Insano</a></li> 
+                                    </ul>
+                                </nav>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2 class="title-side-darker">Recentes</h2>
+                                    </header>
+                                    <div class="mini-posts">
+                                        <article>
+											<a href="../room/intro_networking" class="image"><img src="../images/network.jpg" alt="" /></a>											
+											<p>Principios básicos de Redes. Informações dos modelos OSI, TCP/IP.</p>											
+										</article>
+                                        <article>
+											<a href="../room/Nmap" class="image"><img src="../images/nmap-post.jpg" alt="" /></a>											
+											<p>Uma poderosa ferramenta para scan ou varredura de redes.</p>											
+										</article>
+                                        <article>
+											<a href="../room/whatisnetworking" class="image"><img src="../images/networking-mini.jpg" alt="" /></a>											
+											<p class="justificado">O começo fundamental para redes de computadores, de uma forma interativa.</p>											
+										</article>
+                                    </div>
+                                    
+                                </section>                           
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>                    
+                        </div>
+                    </div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -2433,3 +2433,12 @@ h2.title-side-darker{
   }
 }
 
+
+/* secret */
+#card .description .box_question .potter{
+  color: transparent;
+}
+
+#card .description .box_question .potter:hover{
+  color:gray;
+}
