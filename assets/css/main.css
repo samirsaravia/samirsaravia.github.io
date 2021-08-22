@@ -2402,6 +2402,10 @@ h2.title-side-darker{
 }
 
 @media screen and (min-width: 300px) and (max-width: 570px){
+  .resumo {
+    font-size: 1.4em;
+    
+  }
 
   .image-bigger{
     margin: 0;
