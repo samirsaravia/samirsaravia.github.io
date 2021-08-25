@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es">
+	<head>
+		<title>Introdução Redes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index" class="logo"><strong>InfoSeg</strong> by sam!co</a>
+									<ul class="icons">										
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Introdução Redes</h1>
+									</header>
+									<span class="image main"><img class="image-bigger" src="../images/net.jpg" alt="" /></span>                                    
+                                    <!-- card -->
+                                        <section id="card">
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 1 <span class="complement">Introdução</span></summary>
+                                                <div class="description">                                                    
+                                                    <span class="answer">Não precisa resposta</span>
+                                                </div>
+                                            </details>
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 2 <span class="complement">The OSI Model</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada Você escolheria para enviar dados: TCP ou UDP?</p>
+                                                        </div>
+                                                        <div class="answer">4</div>
+                                                        <div class="reason"><p>Camada 4 <strong>Transporte (Transport)</strong><br> Os dois protocolos mais usados nessa camada são TCP(protocolo de control de transmissão) e UDP (Protocolo de datagramas do usuario)</p></div>
+                                                    </div>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada checa os pacotes recebidos para ter certeza que não foram corrompidos?</p>
+                                                        </div>
+                                                        <div class="answer">2</div>
+                                                        <div class="reason"><p>Camada 2 <strong>Data Link</strong><br>Uma das funções importantes quando recebe dados nessa camada,é checar os dados recebidos para ter certeza que não foram corrompidos durante a transmissão, que pode acontecer quando os dados são enviados da camada 1: camada física</p></div>
+                                                    </div>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Em qual camada poderia os dados serem formatados preparando-os para transmiti-los?</p>
+                                                        </div>
+                                                        <div class="answer">2</div>
+                                                        <div class="reason"><p>Camada 2 <strong>Data Link</strong><br>Nesta camada foca-se na transmissão de endereço físico, e uma das tarefas é apresentar os dados em formatos apropriados para transmissão.</p></div>
+                                                    </div>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada é capas de transmitir e receber dados?</p>
+                                                        </div>
+                                                        <div class="answer">1</div>
+                                                        <div class="reason"><p>Camada 1 <strong>Física (Physical)</strong><br>Uma camada de baixo nível, logo no hardware do computador, é onde os pulsos eletricos que são feito pelos dados transmitidos pela rede são enviados e recebidos.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada Encrypta, comprime ou transforma os dados iniciais para criar um padrão?</p>
+                                                        </div>
+                                                        <div class="answer">6</div>
+                                                        <div class="reason"><p>Camada 6 <strong>Apresentação (Presentation)</strong><br>Nesta camada recebe dados da camada de Aplicação (Applicaction) que transforma os dados num formato padrão.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada acompanha a comunicação entre o Servidor (host) e o cliente?</p>
+                                                        </div>
+                                                        <div class="answer">5</div>
+                                                        <div class="reason"><p>Camada <strong> Sessão(Session)</strong><br>Nesta camada recebe dados correctamente formatados da camada de 'Presentação' e procura estabelecer uma conexão com os outros computadores através da rede.Graças a essa camada que é possível fazer varias requisições sem misturar.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada aceita pedidos de comunicação de aplicativos?</p>
+                                                        </div>
+                                                        <div class="answer">7</div>
+                                                        <div class="reason"><p>Camada  <strong> Aplicação(Application)</strong><br>Segundo modelo OSI, nesta camada tem opções de rede para programas que estão funcionando num computador, oferecendo-os uma interface para transmitir dados.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada trabalha com 'endereçamento lógico'?</p>
+                                                        </div>
+                                                        <div class="answer">3</div>
+                                                        <div class="reason"><p>Camada <strong> Rede (Network)</strong><br>Responsável por encontrar o destino do pedido ou requisição. É usado para ordenar a rede apropriadamente. Atualmente a forma mais comum de endereço lógico é o formato IPV4 (endereço comum dos roteadores)</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Quando envia-se dados por TCP, Como você chamaria o 'Tamanho de um bite' ("bite-sized") que são partes de dados?</p>
+                                                        </div>
+                                                        <div class="answer">Segmentos</div>
+                                                        <div class="reason"><p>Camada <strong> Transporte</strong><br>Esta camada divide a transmissão em partes, usando TCP são chamados de 'segmentos' e em UDP são chamados de 'Datagramas'.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Com qual camada o protocolo FTP se comunica? </p>
+                                                        </div>
+                                                        <div class="answer">7</div>
+                                                        <div class="reason"><p>Camada <strong> Aplicação</strong><br>fornece opções de rede. FTP (protocolo de transferência de arquivos) é considerado um protocolo de Aplicação que movimenta arquivos entre um sistema local e remoto.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual protocolo de transporte é ou melhor à ser utilizado para transmitir uma "live"? </p>
+                                                        </div>
+                                                        <div class="answer">UDP</div>
+                                                        <div class="reason"><p>Com <strong> UDP</strong><br>Os pacotes de dados tem como propósito rapidez ao invés de precisão. Com TCP acontece ao contrário, apropriado para envio de arquivos, ou carregar Sites; onde nenhum dado pode se perder no caminho.</p></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </details>
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 3 <span class="complement">Encapsulation</span></summary>
+                                                <div class="description">  
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>                                                     
+                                                    <div class="box_question">
+                                                        <div class="reason"><img src="../images/encapsulation.jpg" alt="OSI model"></div>                                                        
+                                                    </div>                                                  
+                                                    <div class="box_question">
+                                                        <div class="reason"></div>
+                                                        <div class="quest">
+                                                            <p>Como tem que referir à camada 2 do processo de encapsulamento (com o modelo OSI)?</p>
+                                                        </div>
+                                                        <div class="answer">Frames</div>
+                                                        <div class="reason"><p>Obs.Imagem</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Como refere-se aos dados na camada 4 do processo de encapsulamento, se o protocolo UDP fosse selicionado?</p>
+                                                        </div>
+                                                        <div class="answer">Datagrams</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual processo realizaria um computador em uma mensagem recebida?</p>
+                                                        </div>
+                                                        <div class="answer">De-encapsulation</div>
+                                                        <div class="reason"><p>No estagio <strong> 7</strong><br>Quando uma mensagem é recebida (mensagem encapsulada) por um segundo computador, este reverte o processo até atingir a camada de "Aplicação" retirando a informação.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é a camada do modelo OSI que adiciona um 'trailer' durante a encapsulação?</p>
+                                                        </div>
+                                                        <div class="answer">Data link</div>
+                                                        <div class="reason"><p>O processo de <strong> Encapsulamento</strong><br>Quando o pacote (packet) atravessa o camada Data Link este se transforma em "Frame" e quando este atravessava a camada da Rede o 'Frame' foi divido em bits.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>O encapsulamento adiciona uma camada de segurança? Aye/Nay?</p>
+                                                        </div>
+                                                        <div class="answer">Aye</div>
+                                                        <div class="reason"><p>O processo <strong> encapsulamento e desencapsulamento</strong> é muito importante, porque fornece um método de envio 'padrão'. Independente da fabricação, o sistema operativo ou outros fatores.</p></div>
+                                                    </div>
+
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 4 <span class="complement">O Modelo TCP/IP</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual modelo foi Introduzido primeiro, OSI ou TCP/IP?</p>
+                                                        </div>
+                                                        <div class="answer">TCP/IP</div>
+                                                        <div class="reason"><p>O modelo <strong> TCP/IP</strong><br>É similar ao modelo OSI, e tem alguns anos na frente, e serve como base para as redes na realidade de hoje.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP cobre a funcionalidade da camada de Transporte do modelo OSI? (nome completo)</p>
+                                                        </div>
+                                                        <div class="answer">Transport</div>
+                                                        <div class="reason"><p>O modelos <strong> TCP/IP e OSI</strong><br>são diferenetes, sendo que OSI tem 7 camadas e TCP/IP tem 4 camadas.</p></div>
+                                                    </div>                                                    
+                                                                                                        
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP cobre a funcionalidade da camada de 'Sessão' do modelo OSI? (nome completo)</p>
+                                                        </div>
+                                                        <div class="answer">Application</div>
+                                                        <div class="reason"><p>No modelo <strong> TCP/IP</strong><br>A camada de "Aplicação" (application), representa o equivalente de 3 camadas no modelo OSI (Aplication,Presentation, Session).</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>A camada de Interface de Rede do modelo TCP/IP cobre a funcionalidade de duas camadas no modelo OSI, a qual é Data link e ...?</p>
+                                                        </div>
+                                                        <div class="answer">Physical</div>
+                                                        <div class="reason"><p>A camada <strong> Física (Physical)</strong><br> é a primeira camada, que está logo no hardware do computador.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP trabalha com a funcionalidade da camada de "Rede" do OSI?</p>
+                                                        </div>
+                                                        <div class="answer">Internet</div>
+                                                        <div class="reason"><p>A Camada <strong> Internet</strong><br>do modelo TCP/IP é a responsável por encontrar o destino do seu pedido <br>(ex. facebook.com, google.com,etc)  .</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que tipo de protocolo é TCP?</p>
+                                                        </div>
+                                                        <div class="answer">Connection-based</div>
+                                                        <div class="reason"><p>Connection-based ou <strong> baseada-na-conexão</strong><br>significa que antes que você envie dados usando  TCP, o protocolo primeiro estabelece uma conexão entre os computadores (ex. seu computador e o servidor do google) para depois enviar os dados, mas este protocolo faz 3 tipos de conexão antes, para se garantir que está conectado mesmo.</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>O  que significa SYN?</p>
+                                                        </div>
+                                                        <div class="answer">Synchronise</div>
+                                                        <div class="reason"><p>Synchronise ou  <strong>sincronização</strong><br>É a primeira etapa da verificação de conexão entre os computadores.</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é a SEGUNDA etapa das 3 etapas (3handshake)?</p>
+                                                        </div>
+                                                        <div class="answer">SYN/ACK</div>
+                                                        <div class="reason"><p>Para ter certeza da conexão<strong> o Servidor(o segundo computador)</strong><br>responde com o mesmo pacote de dados que foi enviado na primeira etapa adicionando um outro pacote (ACK) para após receber de volta e ter certeza que agora é possível se conectar..</p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual a abreviação para o segmento "Acknowledgement" na terceira etapa de conexão? (3-way-handshake) </p>
+                                                        </div>
+                                                        <div class="answer">ACK</div>
+                                                        <div class="reason"><p>Nesta <strong> Terceira etapa</strong><br>O servidor recebe do cliente o pacote enviado na segunda etapa e agora sim garantir a conexão e envio de dados. (por isso quando vai procurar um site, ele demora um pouquinho para se conectar, e mostra uma imagem ou um icone "carregando")</p></div>
+                                                    </div>
+
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 5 <span class="complement">Net tools: Ping</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual comando é usado para fazer um ping ao site bbc.co.uk?</p>
+                                                        </div>
+                                                        <div class="answer">ping bbc.co.uk</div>
+                                                        <div class="reason"><p>Para fazer um <strong> PING</strong><br>que é nada mais que verificar se está conectado ou não, o comando é "ping [alvo]"</p></div>
+                                                    </div>
+                                                    
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Faça um ping no "muirlandoracle.co.uk" Qual é endereço IPV4?</p>
+                                                        </div>
+                                                        <div class="answer">217.160.0.152</div>
+                                                        <div class="reason"><img src="../images/ping_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" (mudança) permite mudar o intervalo de enviar um pedido de ping?</p>
+                                                        </div>
+                                                        <div class="answer">-i</div>
+                                                        <div class="reason"><img src="../images/i_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" (mudança) permite restringir a requisição para IPV4?</p>
+                                                        </div>
+                                                        <div class="answer">-4</div>
+                                                        <div class="reason"><img src="../images/b_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" permite ter mais informação (verbose)? </p>
+                                                        </div>
+                                                        <div class="answer">-v</div>
+                                                        <div class="reason"><p><strong> Verbose</strong><br>Esta presente em quanse todas as ferramentas, serve para visualizar o que acontece no segundo plano.</p></div>
+                                                    </div>
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 6 <span class="complement">Net tools: Traceroute</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <p>Traceroute faz um seguimento, do seu dispositivo até o servidor (ex:google.com), e mostra todos os "caminhos" ex: o endereço do seu dispositivo, endereço do seu proveedor de internet,endereço do servidor do estado, até chegar no servidor do Google. </p>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Use traceroute em tryhackme.com</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa de resposta</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch"(mudança) pode-se usar para especificar uma interface enquando usa Traceroute?</p>
+                                                        </div>
+                                                        <div class="answer">-i</div>
+                                                        <div class="reason"><p><strong>traceroute --help (no terminal)</strong><br><img src="../images/c_int_net.png" alt=""></p></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual "switch" é usado para TCP SYN request quando se faz seguimento da rota?</p>
+                                                        </div>
+                                                        <div class="answer">-T</div>
+                                                        <div class="reason"><img src="../images/d_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual camada do modelo TCP/IP fará mapeamento por padrão (Window)?</p>
+                                                        </div>
+                                                        <div class="answer">Internet</div>
+                                                        <div class="reason"><p>Que é equivalente ao modelo <strong> OSI</strong><br>A camada da Rede.</p></div>
+                                                    </div>
+
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 7 <span class="complement">Net tools: WHOIS</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Realize uma busca 'whois' no facebook.com</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa resposta</div>
+                                                        <div class="reason"><img src="../images/whois_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é codigo do registro postal do Facebook.com?</p>
+                                                        </div>
+                                                        <div class="answer">94025</div>
+                                                        <div class="reason"><img src="../images/cep_int_net.png" alt=""></div>
+                                                    </div>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Quando foi o dominio Facebook.com registrado?</p>
+                                                        </div>
+                                                        <div class="answer">29/03/1997</div>
+                                                        <div class="reason"><img src="../images/reg_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Realize um whois em microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">Não precisa resposta</div>
+                                                        <div class="reason"><img src="../images/mic_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual a cidade em que se registrou?</p>
+                                                        </div>
+                                                        <div class="answer">Redmond</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o nome do campo de Golfe perto do endereço de registro para microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">Bellevue Golf Course</div>
+                                                        <div class="reason"><img src="../images/mic_reg_int_net.png" alt=""></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o E-mail Tech (técnico) da microsoft.com?</p>
+                                                        </div>
+                                                        <div class="answer">msnhst@microsoft.com</div>                                                        
+                                                    </div>
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 8 <span class="complement">Networking tools: Dig</span></summary>
+                                                <div class="description">
+                                                    <h3 class="darker-title">Perguntas e respostas</h3>
+                                                    <p>Quando você quere acessar um site, a primeira coisa que o seu computador faz, é checar a memória caché para ver se já está salvo o endereço, se não estiver no caché, seu computador envia um pedido a um servidor Recursivo "recursive DNS", é tipo vai no servidor do seu provedor de internet (ISP) e verifica o caché, se não estiver, o pedido vai para um servidor Root,antes do 2004 tinha-se 13 servidores Root no mundo, hoje tem muito mais. Dos servidores Root volta para os servidores TLD (.br/.bo/.uk) do respetivo país, após isso vai para os servidores Autoritativos, onde se encontra o registro da pagina que você procura e ele permite a conexão com o servidor do site, tudo isso em questão de mili-segundos.</p>
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que significa DNS?</p>
+                                                        </div>
+                                                        <div class="answer">Domain Name System</div>
+                                                        <div class="reason"><a class="sites-link" href="https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio" target="_blanc">Wikipedia</a></div>
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Qual é o primeiro tipo de servidor DNS que o seu computador consulta quando você procura por um dominio?</p>
+                                                        </div>
+                                                        <div class="answer">Recursive</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Que tipo de servidor DNS contém o registro de um dominio especifico (ex: .com/ .com.br)?</p>
+                                                        </div>
+                                                        <div class="answer">Top-Level Domain</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Onde o primeiro lugar à ser verificado na procura do endereço do dominio?</p>
+                                                        </div>
+                                                        <div class="answer">Local Cache</div>
+                                                        <div class="reason"><p>No seu proprio computador ou dispositivo</p></div>
+                                                    </div>
+
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>O google funciona em 2 servidores DNS. Um deles tem IP 8.8.8.8 qual é o endereço do outro?</p>
+                                                        </div>
+                                                        <div class="answer">8.8.4.4</div>                                                        
+                                                    </div>
+
+                                                    <div class="box_question">
+                                                        <div class="quest">
+                                                            <p>Se uma consulta DNS tem um TTL de 24 horas,  qual o número que a consulta DIG mostrará?</p>
+                                                        </div>
+                                                        <div class="answer">86400</div>
+                                                        <div class="reason"><p><strong> TTL (Time To Live)</strong><br>Quando seu computador faz uma consulta por o nome de um dominio, este salva o resultado no caché, e mostra por quantos segundos tem validez, então 24 horas tem 86400 segundos. (60*60*24)</p></div>
+                                                    </div>                                                    
+                                                </div>
+                                            </details>
+
+                                            <details class="collapse">
+                                                <summary class="title">Tarefa 9 </summary>
+                                                <div class="description">
+                                                    <div class="answer">Não precisa resposta</div>                                                        
+                                                    
+                                                </div>
+                                            </details>
+                                            
+                                        </section> 
+                        </div>
+                </div>
+                                       
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+                            <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2 class="title-side-darker">THM Write-Ups</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="../index" class="icon solid fa-angle-double-left">  Inicio</a></li>									
+                                    <li><a href="#">Fácil</a></li>
+                                    <li><a href="#">Médio</a></li>
+                                    <li><a href="#">Difícil</a></li>
+                                    <li><a href="#">Insano</a></li> 
+                                </ul>
+                            </nav>
+
+                            <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2 class="title-side-darker">Recentes</h2>
+                                </header>
+                                <div class="mini-posts">
+                                    <article>
+                                        <a href="Nmap" class="image"><img src="../images/nmap-post.jpg" alt="" /></a>											
+                                        <p>Uma poderosa ferramenta para scan ou varredura de redes, de codigo aberto.</p>											
+                                    </article>
+                                    <article>
+                                        <a href="intro_networking" class="image"><img src="../images/network.jpg" alt="" /></a>											
+                                        <p>Principios básicos de Redes. Informações dos modelos OSI, TCP/IP.</p>											
+                                    </article>
+                                    <article>
+                                        <a href="network-service" class="image"><img src="../images/SR-post-img.jpg" alt="" /></a>											
+                                        <p>Enumerar e explorar redes I</p>											
+                                    </article>
+                                </div>                                
+                            </section>
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>
+
+                        </div>
+                    </div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es">
+	<head>
+		<title>Nmap</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index" class="logo"><strong>InfoSeg</strong> by sam!co</a>
+									<ul class="icons">										
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Nmap</h1>
+									</header>
+
+									<span class="image main"><img src="../images/nmap-head.png" alt="" /></span>
+                                    
+                                    <!--Card-->
+                                    <section id="card">
+                                        <details class="collapse">
+                                            <summary class="title">Task 1<span class="complement">Ligar</span></summary>
+                                            <div class="description">
+                                                <p>Não precisa de resposta , é só ligar a máquina virtual (VM)</p>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 2<span class="complement">Introdução</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Quais construções de rede são usadas para direcionar o tráfego para aplicativo correto em um servidor?</p>
+                                                    </div>
+                                                    <div class="answer">Ports</div>
+                                                    <div class="reason"><p>Ports ou  <strong> Portas</strong><br>Um termo usado para indicar um ponto físico ou uma entrada num dispositivo, e "Portas" são necessárias para  conexões multiplas em uma Rede.</p></div>
+                                                </div>
+
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Quantas portas estão disponíveis em qualquer computador dentro de uma Rede?</p>
+                                                    </div>
+                                                    <div class="answer">65535</div>
+                                                    <div class="reason"><p>Qualquer computador tem <strong> 65535</strong><br>Mas muitas dessas, estão registradas como portas 'padrão', outras são 'reservadas', 'portas privadas' <a href="https://pt.wikipedia.org/wiki/Porta_(redes_de_computadores)" target="_blank">Wikipedia</a></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Quantas destas portas são consideradas como "bem-conhecidas"?</p>
+                                                    </div>
+                                                    <div class="answer">1024</div>
+                                                    <div class="reason"><p>As portas de 0-<strong>1023</strong><br></p>conhecidas como "portas conhecidas" estão reservadas para processos do sistema ou programas utilizados por privilegiados.</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 3<span class="complement">Nmap Switches</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual é o primeiro 'switch' ou comutador listado no menu 'ajuda' para um "Syn Scan"?</p>
+                                                    </div>
+                                                    <div class="answer">-sS</div>
+                                                    <div class="reason"><img src="../images/sS-nmap.png" alt=""></div>
+                                                </div>
+
+
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual switch seria usado para um scan (varredura) "UDP"?</p>
+                                                    </div>
+                                                    <div class="answer">-sU</div>
+                                                    <div class="reason"><img  src="../images/sU-nmap.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Se você quer detectar o sistema operativo em funcionameto, qual switch teria que usar?</p>
+                                                    </div>
+                                                    <div class="answer">-O</div>
+                                                    <div class="reason"><img src="../images/o-nmap.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Nmap tem um switch para detectar a versão do serviço que está funcionando no computador 'alvo', qual é?</p>
+                                                    </div>
+                                                    <div class="answer">-sV</div>
+                                                    <div class="reason"><img src="../images/nmap-2.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>A saída padrão do nmap não tem suficiente informação para um Pentester. Como incrementar essa informação de saída?</p>
+                                                    </div>
+                                                    <div class="answer">-v</div>
+                                                    <div class="reason"><img src="../images/nmap3.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>'Verbosity' ou mais informaçãode saída, é um nível bom, mas o nível 2 é melhor! Como incrementar o nível?</p>
+                                                    </div>
+                                                    <div class="answer">-vv</div>
+                                                    <div class="reason"><img src="../images/nmap3.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Sempre deberiam ser salvos as varreduras (scans) o que significa que seria preciso funcionar uma vez só (reduzingo o tráfrego de rede e chance de ser detectado), dando referências para quando for feito o "reporte" escrito para o(s) cliente(s). Qual switch é usado para salvar os resultados do nmap nos 3 melhores resultados?</p>
+                                                    </div>
+                                                    <div class="answer">-oA</div>
+                                                    <div class="reason"><img src="../images/nmap4.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual switch debería ser usado para salvar  os resultados do nmap, em um formato 'Normal'?</p>
+                                                    </div>
+                                                    <div class="answer">-oN</div>
+                                                    <div class="reason"><img src="../images/nmap5.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Um formato de saída muito útil: Como sería salvo os resultados em um formato "grepable"?</p>
+                                                    </div>
+                                                    <div class="answer">-oG</div>
+                                                    <div class="reason"><img src="../images/nmap5.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>As vezes os resultados não são suficientes.Se não se importa com o barulho que gera na rede, é possível abilitar o modo 'Agressivo'. Uma abreviada de ativar a detecção de serviços, sistema operativo, um mapeamento de rede e uma varredura (scan) script. Qual é ativado esta opção?</p>
+                                                    </div>
+                                                    <div class="answer">-A</div>
+                                                    <div class="reason"><img src="../images/nmap6.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Nmap oferece 5 níveis de tempo. Estes são essencialmente usados para incrementar a velocidade da varredura (scan). Como escolher o tempo no nível 5?</p>
+                                                    </div>
+                                                    <div class="answer">-T5</div>
+                                                    <div class="reason"><img src="../images/nmap7.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como escolher qual porta fazer o scan (varredura), para fazer somente na porta 80?</p>
+                                                    </div>
+                                                    <div class="answer">-p 80</div>
+                                                    <div class="reason"><img src="../images/nmap8.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como fazer um scan (varredura) entre a porta 1000-1500?</p>
+                                                    </div>
+                                                    <div class="answer">-p 1000-1500</div>
+                                                    <div class="reason"><img src="" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como fazer um scan (varredura) de todas as portas?</p>
+                                                    </div>
+                                                    <div class="answer">-p-</div>
+                                                    <div class="reason"><img src="" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como ativar um script da biblioteca de scripts do Nmap?</p>
+                                                    </div>
+                                                    <div class="answer">--script</div>
+                                                    <div class="reason"><img src="../images/nmap9.png" alt=""></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como ativar todos os scripts na categoria "vuln"?</p>
+                                                    </div>
+                                                    <div class="answer">--script=vuln</div>                                                    
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 4<span class="complement">Scan Types (ST)</span></summary>
+                                            <div class="description">                                                
+                                                <div class="box_question">
+                                                    <div class="quest">                                                        
+                                                    </div>
+                                                    <div class="answer">Não precisa de resposta</div>
+                                                    <div class="reason"><p>Uma breve <strong> informação</strong><br>Há 3 tipos de varredura (scan): 
+                                                        <ul>
+                                                            <li>TCP Connect Scans (-sT)</li>
+                                                            <li>SYN 'Half Open' Scan (-sS)</li>
+                                                            <li>UDP Scans (-sU)</li>
+                                                        </ul>
+                                                        E outros 3 menos comuns:
+                                                        <ul>
+                                                            <li>TCP Null Scan (-sN)</li>
+                                                            <li>TCP FIN scan (-sF)</li>
+                                                            <li>TCP Xmas scans (-sX)</li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 5<span class="complement">ST TCP Connect Scans </span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual RFC define o comportamento do protocolo TCP?</p>
+                                                    </div>
+                                                    <div class="answer">RFC 793</div>
+                                                    <div class="reason"><p>Muito interessante para ler: <a href="https://datatracker.ietf.org/doc/html/rfc793" target="_blank">RFC 793</a></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Se uma porta está fechada, qual "Flag" (sinalização) o servidor debe enviar de volta para indicar o acontecido?</p>
+                                                    </div>
+                                                    <div class="answer">RST</div>
+                                                    <div class="reason"><p>Se o  <strong> Nmap</strong><br>envia um pedido TCP com um flag SYN como porta 'fechada', o servidor alvo irá responder com um pocote TCP tendo um flag de RST (reset).Dessa forma que o Nmap entende que uma porta está fechada.<br>
+                                                    <img src="../images/tcp-nmap.png" alt=""></p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 6<span class="complement">ST SYN Scans</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Há dois tipos de nomes para um scan SYN, quais são eles?</p>
+                                                    </div>
+                                                    <div class="answer">Halp-Open, Stealth</div>
+                                                    <div class="reason"><p>SYN scans<br>É usado para fazer uma varredura TCP de um alcance de portas de um alvo ou alvos.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O Nmap pode usar um Scan SYN sem a permissão Sudo* (Y/N)'yes/no' </p>
+                                                    </div>
+                                                    <div class="answer">N</div>
+                                                    <div class="reason"><p>Este tipo de varredura<strong> requer </strong><br>permissões SUDO, para funcionar corretamente, este tipo de scan tem a abilidade de criar pacotes brutos(sem formatação) que é possível só com o adm root.
+                                                        <br><h6>* Sudo é permissão mais privilegiada de um computador.</h6></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 7<span class="complement">ST UDP scans</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Se uma porta UDP não responde pra a varredura do Nmap, como esta será mostrada?</p>
+                                                    </div>
+                                                    <div class="answer">open|filtered</div>
+                                                    <div class="reason"><p>Em outras palavras <strong> open|filtered</strong><br>É suspeito que a porta esteja aberta, mas poderia estar protegida por um firewall.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Quando uma porta UDP está fechada, por 'padrão' o alvo tem que enviar de volta uma mensagem "port unreachable" (porta fora do alcance). Qual protocol é usado para isto acontecer?</p>
+                                                    </div>
+                                                    <div class="answer">ICMP</div>
+                                                    <div class="reason"><p>O <strong> ICMP (ping)</strong><br>Contém uma mensagem, que a porta está fora do alcance.Dessa forma o Nmap reconhece a porta fechada e continua com o serviço.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 8<span class="complement">ST NULL, FIN e Xmas</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual dos três tipos de scan (varredura) usa o 'Flag' URG (urgente)?</p>
+                                                    </div>
+                                                    <div class="answer">xmas</div>
+                                                    <div class="reason"><p><strong> Xmas</strong><br> envia um pacote TCP malformado e espera de volta uma resposta RST (reset) indicando 'porta fechada'.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Para que as varreduras (scans) NULL, FIN e Xmas são utilizadas? </p>
+                                                    </div>
+                                                    <div class="answer">Firewall Evasion</div>
+                                                    <div class="reason"><p>Firewall Evasion ou <strong>Evasão do Firewall  </strong><br>Que é nada mais e nada menos que burlar a segurança de um firewall.Aparelhos mais modernos tem melhor segurança contra este tipos de varreduras, não tem um que seja 100% confiável.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual Sistema Operativo mais comum responde a este tipo de varredura NULL,FIN ou Xmas com um RST(reset) para cada porrta?</p>
+                                                    </div>
+                                                    <div class="answer">Microsoft Windows</div>
+                                                    <div class="reason"><p>No <strong>RFC 793</strong><br>Diz que redes de computadore respondem para pacotes mal formados com um RST TCP pacote pra portas fechadas e não responde quando as portas ficam abertas.Mas a Microsoft Windows e alguns aparelhos de rede (modems, switch)  são conhecidos por responder com um RST para qualquer pacote malformado independente da porta estiver aberta ou fechada.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 9<span class="complement">ST ICMP Net Scanning</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Como realizar um ping na rede 172.16.x.x(com uma mascara de: 255.255.0.0) usando o Nmap? (CIDR) </p>
+                                                    </div>
+                                                    <div class="answer">nmap -sn 172.16.x.x/16</div>
+                                                    <div class="reason"><p>A notação <strong> CIDR</strong><br>Classifica por 'Classe' (A,B ou C) A mascara de rede demonstra que é de Classe B, o que significa que 255,255 é para a 'Rede' e 0,0 é para o 'Host' 255=8bits.</p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 10<span class="complement">NSE scripts</span></summary>
+                                            <div class="description">
+                                                <p>NSE (Nmap Scripting Engine) Mecanismo de Varredura do Nmap, é um adicional poderoso do Nmap, podendo exnteder as funcionalidades.</p>
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual a linguagem em que estão escritos os scripts NSE?</p>
+                                                    </div>
+                                                    <div class="answer">Lua</div>
+                                                    <div class="reason"><p>Estos scripts<br>São usados para uma variedade de coisas: como scans de vulnerabilidades, automatização de exploits.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual categoria de scripts pode ser uma má ideia utilizar para um ambiente de produção?</p>
+                                                    </div>
+                                                    <div class="answer">intrusive</div>
+                                                    <div class="reason"><p>As <strong> Categorias:</strong><br>
+                                                        <ul>
+                                                            <li>Safe: que não afeta o alvo</li>
+                                                            <li>Intrusive: que não é seguro porque tem muita probabilidade de afetar o alvo.</li>
+                                                            <li>vuln: Scan para vulnerabilidades</li>
+                                                            <li>Exploit: para exploração de vulnerabilidades</li>
+                                                            <li>Auth: tentativa de burlar um autenticação para fazer funcionar alguns serviços (fazer Login no servidor FTP)</li>
+                                                            <li>Brute: tentativa força bruta para quebrar credenciais para executar serviços.</li>
+                                                            <li>Discovery: tentativa de consulta de serviços em funcionamento para mais informação a respeito da rede.</li>
+                                                        </ul></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 11<span class="complement">Trabalhando com NSE</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual opção pode associar o script <code>ftp-anon.nse</code> ?</p>
+                                                    </div>
+                                                    <div class="answer">maxlist</div>
+                                                    <div class="reason"><p>Fazendo um 'cat' no  <strong> ftp-anon.nse</strong><br>
+                                                        <img src="../images/ftp-nmap.png" alt=""></p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 12<span class="complement">Procurando Scripts</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Procure pelo script "smb" no diretorio <code>/usr/share/nmap/scripts/</code> usando os metodos da aula. Qual é nome do script que determina a base do Sistema Operativo de um servidor SMB?</p>
+                                                    </div>
+                                                    <div class="answer">smb-os-discovery.nse</div>
+                                                    <div class="reason"><p>Fazendo um <strong> grep 'smb'</strong><br>
+                                                    <img src="../images/smb-nmap.png" alt=""></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Lendo o script, do que este depende para funcionar?</p>
+                                                    </div>
+                                                    <div class="answer">smb-brute</div>
+                                                    <div class="reason"><p>Fazendo um  <strong> CAT/LESS</strong><br>
+                                                    <img src="../images/smb2-nmap.png" alt=""></p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 13<span class="complement">Evasão Firewall</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual protocolo simples é bloqueado com frequência, requerindo o uso do <code>-Pn</code> switch?</p>
+                                                    </div>
+                                                    <div class="answer">ICMP</div>
+                                                    <div class="reason"><p>O switch  <strong> -Pn</strong><br>Trata os host ou computadores como 'online'.Geralmente um host windows com seu firewall padrão, bloqueia todos os pacotes ICMP, e isto representa um problema: com frequências é usado o 'ping' para estabelecer manualmente atividade no servidor ou computador.Nmap faz o mesmo por padrão,o que significa que irá encontrar um host com configuração de um firewall como desligado.Para fazer um scan precisa aparecer como 'Ligado'.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Qual switch do Nmap permite adicionar um dado aleatório fora do padrão no fim dos pacotes?</p>
+                                                    </div>
+                                                    <div class="answer">--data-length</div>
+                                                    <div class="reason"><p><img src="../images/data-nmap.png" alt=""></p></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 14<span class="complement">Praticando</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Perguntas e respostas</h3>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>O computador alvo responde a pedidos ICMP(ping)? (Y/N)</p>
+                                                    </div>
+                                                    <div class="answer">N</div>
+                                                    <div class="reason"><p><img src="../images/ping-nmap.png" alt=""></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Realize um scan Xmas nas primeiras 999 portas do objetivo-- Quantas portas mostram como abertas ou filtradas (open|filtered)?</p>
+                                                    </div>
+                                                    <div class="answer">999</div>
+                                                    <div class="reason"><p><img src="../images/sX-nmap.png" alt=""></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Há uma razão pelo qual os resultados do scan. Encontre qual é o switch para usar e leia a dica antes de pedir ajuda!</p>
+                                                    </div>
+                                                    <div class="answer">No response</div>
+                                                    <div class="reason"><p> <strong> Na imagem de cima está a resposta</strong>.</p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Realize um scan TCP SYN  nas primeiras 5000 portas do objetivo. Quantas portas aparecem como abertas?</p>
+                                                    </div>
+                                                    <div class="answer">5</div>
+                                                    <div class="reason"><p><img src="../images/tsyn-nmap.png" alt=""></p></div>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Abre o Wireshark e realize uma scan de conexão TCP para a porta 80 no objetivo, monitorando os resultados. Tenha certeza que entendeu o que aconteceu.</p>
+                                                    </div>
+                                                    <p>Não precisa de resposta</p>
+                                                </div>
+                                                <div class="box_question">
+                                                    <div class="quest">
+                                                        <p>Utilize o script <code>ftp-anon</code>  no objetivo. Pode o Nmap fazer login com sucesso ao servidor FTP na porta 21? (Y/N)</p>
+                                                    </div>
+                                                    <div class="answer">Y</div>
+                                                    <div class="reason"><img src="../images/ftp-user-nmap.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="collapse">
+                                            <summary class="title">Task 15<span class="complement">Conclusão</span></summary>
+                                            <div class="description">
+                                                <h3 class="darker-title">Documentação para ler</h3>
+                                                <div class="box_question">                                                    
+                                                    <div class="answer"><a href="https://nmap.org/book/" target="_blank">doc</a></div>                                                    
+                                                </div>
+                                            </div>
+                                        </details>
+                                        
+                                    </section>
+                                    
+
+									
+
+								</section>
+
+						</div>
+					</div>
+
+                    <!-- Sidebar -->
+                    <div id="sidebar">
+                        <div class="inner">
+                            <!-- Menu -->
+                                <nav id="menu">
+                                    <header class="major">
+                                        <h2 class="title-side-darker">THM Write-Ups</h2>
+                                    </header>
+                                    <ul>
+                                        <li><a href="../index" class="icon solid fa-angle-double-left"> Inicio</a></li>									
+                                        <li><a href="#">Fácil</a></li>
+                                        <li><a href="#">Médio</a></li>
+                                        <li><a href="#">Difícil</a></li>
+                                        <li><a href="#">Insano</a></li> 
+                                    </ul>
+                                </nav>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2 class="title-side-darker">Recentes</h2>
+                                    </header>
+                                    <div class="mini-posts">
+                                        <article>
+											<a href="intro_networking" class="image"><img src="../images/network.jpg" alt="" /></a>											
+											<p>Principios básicos de Redes. Informações dos modelos OSI, TCP/IP.</p>											
+										</article>
+										<article>
+											<a href="network-service" class="image"><img src="../images/SR-post-img.jpg" alt="" /></a>											
+											<p>Enumerar e explorar redes I</p>											
+										</article>
+                                    </div>
+                                    
+                                </section>
+                            
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>                    
+                        </div>
+                    </div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

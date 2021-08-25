@@ -121,7 +121,7 @@ a {
       color: inherit; }
 
 strong, b {
-  color: #5a677e;
+  color: #F7F8F8;
   font-weight: 600; }
 
 em, i {
@@ -2454,3 +2454,20 @@ h2.title-side-darker{
 #card .description .box_question .potter:hover{
   color:gray;
 }
+
+
+/* icone lingua */
+img.mini-icone{  
+  
+  text-decoration: none;
+  border-bottom: none;  
+  width: 1.45em;
+}
+a.mini{
+  border: none;
+}
+a.mini:hover{
+  border-bottom: thin dotted #89C80B;
+ ;
+}
+
