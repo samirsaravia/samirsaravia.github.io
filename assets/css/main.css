@@ -101,10 +101,10 @@ body, input, select, textarea {
       font-size: 1.1em; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 1.2em; } }
+      font-size: 10pt; } }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
-      font-size: 9pt; } }
+      font-size: 8.4pt; } }
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
