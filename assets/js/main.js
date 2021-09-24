@@ -311,6 +311,10 @@ const eachArticle  = [
 	}
 ]
 
+eachArticle.sort(function(a,b){
+	return b.id - a.id
+})
+
 const allArticles = document.querySelector(".posts")
 const buttonContainer = document.querySelector(".button-container")
 
