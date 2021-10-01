@@ -316,13 +316,21 @@ eachArticle.sort(function(a,b){
 	return b.id - a.id
 })
 
+
+
+// variables
 const allArticles = document.querySelector(".posts")
 const buttonContainer = document.querySelector(".button-container")
+const miniPostEl = document.getElementById("mini-post-el")
+
+
+
 
 //load Articles
 window.addEventListener("DOMContentLoaded", function(){
-	displayArticlesItem(eachArticle)
-	displayArticleButtons()
+	displayArticlesItem(eachArticle);
+	displayArticleButtons();
+	displayMiniPost(eachArticle);
 })
 
 
@@ -380,4 +388,18 @@ function displayArticleButtons(){
 			}
 		})
 	})
+}
+
+function displayMiniPost(menuArticles){
+	let displayArticle = menuArticles.map(function(article){
+		return `
+		<article>
+			<a href="${article.link}" class="image"><img src="${article.img}" alt="${article.descImg}" /></a>
+			<p>${article.title}</p>
+		</article>
+		`
+	})
+
+	displayArticle = displayArticle.join("")
+	miniPostEl.innerHTML = displayArticle
 }
