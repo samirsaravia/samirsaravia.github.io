@@ -258,148 +258,150 @@
 				});
 
 			});
+			const eachArticle  = [
+				{
+					id: 1,
+					title: "OhSINT",
+					category: "facil",
+					img: "images/ohSINT-post.jpg",
+					descImg:"binoculos com fundo fosco",
+					link:"room/ohSINT",
+					descText: `Ou "OSINT" é toda a informação que pode ser encontrada públicamente na internet. Já que faz referência a código inteligente aberto ou disponível. `,
+			
+				},
+				{
+					id: 2,
+					title: "Introdução Redes",
+					category: "facil",
+					img: "images/network.jpg",
+					descImg:"rack cor azul",
+					link:"room/intro_networking",
+					descText: `Principios básicos de Redes. Informações dos modelos OSI, TCP/IP, como esses modelos funcionam na prática, e uma breve introdução a ferramentas básicas de redes.`,
+				},
+				{
+					id: 3,
+					title: "Nmap",
+					category: "facil",
+					img: "images/nmap-post.jpg",
+					descImg:"feixes de luz",
+					link:"room/Nmap",
+					descText: `Uma poderosa ferramenta para scan ou varredura de redes, de codigo aberto.Nmap funciona na maioria dos sistemas operativos e o pacote oficial binario está disponível para Linux, Windows e MacOS X.`,
+				},
+				{
+					id: 4,
+					title: "O que é Networking?",
+					category: "facil",
+					img: "images/networking-mini.jpg",
+					descImg:"pinos que formam uma rede",
+					link:"room/whatisnetworking",
+					descText: `O começo fundamental para redes de computadores, de uma forma interativa.`,
+				},
+				{
+					id: 5,
+					title: "Network Service",
+					category: "facil",
+					img: "images/SR-post-img.jpg",
+					descImg:"rack de rede com fundo fosco",
+					link:"room/network-service",
+					descText: `Aprendendo a Enumerar e explorar uma variedade de serviços de rede e configurações ruins.`,
+				}
+			]
+			
+			//ordem decrescente
+			eachArticle.sort(function(a,b){
+				return b.id - a.id
+			})
+			
+			
+			
+			// variables
+			const allArticles = document.querySelector(".posts")
+			const buttonContainer = document.querySelector(".button-container")
+			const miniPostEl = document.getElementById("mini-post-el")
+			const threeArticles = [eachArticle[0],eachArticle[1],eachArticle[2]]
+			
+			
+			
+			//load Articles
+			window.addEventListener("DOMContentLoaded", function(){
+				displayArticlesItem(eachArticle);
+				displayArticleButtons();
+				displayMiniPost(threeArticles);
+			})
+			
+			
+			
+			// Article items
+			function displayArticlesItem(menuArticles){
+				let displayArticle = menuArticles.map(function(article){
+					return `
+					<article>
+						<a href="${article.link}" class="image"><img src="${article.img}" alt="${article.descImg}" /></a>
+						<h3>${article.title}</h3>
+						<p class="justificado">${article.descText}</p>
+						<ul class="actions">
+							<li><a href="${article.link}" class="button">Ver Completo</a></li>
+						</ul>
+					</article>
+					`
+				})
+				displayArticle = displayArticle.join("")
+				allArticles.innerHTML = displayArticle
+			}
+			
+			// Article buttons
+			function displayArticleButtons(){
+				const categories = eachArticle.reduce(function(total, item){
+					if(!total.includes(item.category)){
+						total.push(item.category)
+					}
+					return total
+				},["Todos"])
+				const categoryBtns = categories.map(function(category){
+					return `
+						<button class="filter-btn" type="button" data-id="${category}">${category}</button>
+					`
+				}).join("")
+				buttonContainer.innerHTML = categoryBtns
+				const filterBtns = buttonContainer.querySelectorAll(".filter-btn")
+			
+			
+				// filter articles 
+				filterBtns.forEach(function(btn){
+					btn.addEventListener("click", function(e){
+						const category = e.currentTarget.dataset.id
+			
+						const eachArticleCategory = eachArticle.filter(function(menuArticle){
+							// if the eachArticle matches the category show sth
+							if(menuArticle.category === category){
+								return menuArticle
+							}
+						})
+						if(category === "Todos"){
+							displayArticlesItem(eachArticle)
+						}else{
+							displayArticlesItem(eachArticleCategory)
+						}
+					})
+				})
+			}
+			
+			
+			function displayMiniPost(menuArticles){
+				let displayArticle = menuArticles.map(function(article){
+					return `
+					<article>
+						<a href="${article.link}" class="image"><img src="${article.img}" alt="${article.descImg}" /></a>
+						<p>${article.title}</p>
+					</article>
+					`
+				})
+			
+				displayArticle = displayArticle.join("")
+				miniPostEl.innerHTML = displayArticle
+			}
+			
 
 })(jQuery);
 
 
-const eachArticle  = [
-	{
-		id: 1,
-		title: "OhSINT",
-		category: "facil",
-		img: "images/ohSINT-post.jpg",
-		descImg:"binoculos com fundo fosco",
-		link:"room/ohSINT",
-		descText: `Ou "OSINT" é toda a informação que pode ser encontrada públicamente na internet. Já que faz referência a código inteligente aberto ou disponível. `,
-
-	},
-	{
-		id: 2,
-		title: "Introdução Redes",
-		category: "facil",
-		img: "images/network.jpg",
-		descImg:"rack cor azul",
-		link:"room/intro_networking",
-		descText: `Principios básicos de Redes. Informações dos modelos OSI, TCP/IP, como esses modelos funcionam na prática, e uma breve introdução a ferramentas básicas de redes.`,
-	},
-	{
-		id: 3,
-		title: "Nmap",
-		category: "facil",
-		img: "images/nmap-post.jpg",
-		descImg:"feixes de luz",
-		link:"room/Nmap",
-		descText: `Uma poderosa ferramenta para scan ou varredura de redes, de codigo aberto.Nmap funciona na maioria dos sistemas operativos e o pacote oficial binario está disponível para Linux, Windows e MacOS X.`,
-	},
-	{
-		id: 4,
-		title: "O que é Networking?",
-		category: "facil",
-		img: "images/networking-mini.jpg",
-		descImg:"pinos que formam uma rede",
-		link:"room/whatisnetworking",
-		descText: `O começo fundamental para redes de computadores, de uma forma interativa.`,
-	},
-	{
-		id: 5,
-		title: "Network Service",
-		category: "facil",
-		img: "images/SR-post-img.jpg",
-		descImg:"rack de rede com fundo fosco",
-		link:"room/network-service",
-		descText: `Aprendendo a Enumerar e explorar uma variedade de serviços de rede e configurações ruins.`,
-	}
-]
-
-//ordem decrescente
-eachArticle.sort(function(a,b){
-	return b.id - a.id
-})
-
-
-
-// variables
-const allArticles = document.querySelector(".posts")
-const buttonContainer = document.querySelector(".button-container")
-const miniPostEl = document.getElementById("mini-post-el")
-
-
-
-
-//load Articles
-window.addEventListener("DOMContentLoaded", function(){
-	displayArticlesItem(eachArticle);
-	displayArticleButtons();
-	displayMiniPost(eachArticle);
-})
-
-
-
-// Article items
-function displayArticlesItem(menuArticles){
-	let displayArticle = menuArticles.map(function(article){
-		return `
-		<article>
-			<a href="${article.link}" class="image"><img src="${article.img}" alt="${article.descImg}" /></a>
-			<h3>${article.title}</h3>
-			<p class="justificado">${article.descText}</p>
-			<ul class="actions">
-				<li><a href="${article.link}" class="button">Ver Completo</a></li>
-			</ul>
-		</article>
-		`
-	})
-	displayArticle = displayArticle.join("")
-	allArticles.innerHTML = displayArticle
-}
-
-// Article buttons
-function displayArticleButtons(){
-	const categories = eachArticle.reduce(function(total, item){
-		if(!total.includes(item.category)){
-			total.push(item.category)
-		}
-		return total
-	},["Todos"])
-	const categoryBtns = categories.map(function(category){
-		return `
-			<button class="filter-btn" type="button" data-id="${category}">${category}</button>
-		`
-	}).join("")
-	buttonContainer.innerHTML = categoryBtns
-	const filterBtns = buttonContainer.querySelectorAll(".filter-btn")
-
-
-	// filter articles 
-	filterBtns.forEach(function(btn){
-		btn.addEventListener("click", function(e){
-			const category = e.currentTarget.dataset.id
-
-			const eachArticleCategory = eachArticle.filter(function(menuArticle){
-				// if the eachArticle matches the category show sth
-				if(menuArticle.category === category){
-					return menuArticle
-				}
-			})
-			if(category === "Todos"){
-				displayArticlesItem(eachArticle)
-			}else{
-				displayArticlesItem(eachArticleCategory)
-			}
-		})
-	})
-}
-
-function displayMiniPost(menuArticles){
-	let displayArticle = menuArticles.map(function(article){
-		return `
-		<article>
-			<a href="${article.link}" class="image"><img src="${article.img}" alt="${article.descImg}" /></a>
-			<p>${article.title}</p>
-		</article>
-		`
-	})
-
-	displayArticle = displayArticle.join("")
-	miniPostEl.innerHTML = displayArticle
-}
