@@ -315,7 +315,7 @@
 			
 			
 			// variables
-			const allArticles = document.querySelector(".posts")
+			const allArticles = document.querySelector("#posts-el")
 			const buttonContainer = document.querySelector(".button-container")
 			const miniPostEl = document.getElementById("mini-post-el")
 			const threeArticles = [eachArticle[0],eachArticle[1],eachArticle[2]]
